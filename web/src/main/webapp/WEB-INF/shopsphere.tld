@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-jsptaglibrary_3_1.xsd"
+        version="3.1">
+    <description>ShopSphere custom tag library (Java tag handlers)</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>sp</short-name>
+    <uri>http://shopsphere.com/tags</uri>
+
+    <tag>
+        <description>Prints a locale aware rupee amount</description>
+        <name>price</name>
+        <tag-class>com.shopsphere.tags.FormatPriceTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>amount</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Prints a coloured status badge</description>
+        <name>statusBadge</name>
+        <tag-class>com.shopsphere.tags.StatusBadgeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>status</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

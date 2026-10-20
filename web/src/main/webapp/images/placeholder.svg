@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#eef0ff"/>
+  <g fill="none" stroke="#4f46e5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M130 120h140l-14 90H144z"/>
+    <path d="M165 120c0-24 12-40 35-40s35 16 35 40"/>
+  </g>
+  <text x="200" y="258" font-family="Arial, sans-serif" font-size="22" fill="#4f46e5" text-anchor="middle">ShopSphere</text>
+</svg>

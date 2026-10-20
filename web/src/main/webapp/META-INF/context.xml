@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tomcat context: JNDI DataSource used by the JNDI demo (/demo/jndi).
+     Change username/password/url to match your MySQL installation.
+     Copy mysql-connector-j-*.jar into $CATALINA_HOME/lib so Tomcat can load the driver. -->
+<Context>
+    <Resource name="jdbc/ShopSphereDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/shopsphere?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"
+              username="root"
+              password="root"
+              maxTotal="10"
+              maxIdle="5"
+              maxWaitMillis="10000"/>
+</Context>
